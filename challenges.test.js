@@ -3,11 +3,10 @@ const challenges = require('./challenges')
 
 test('problem 1: the basics', () => {
   const expected = new Delta()
-    .insert('Hello ', { h1: true })
-    .insert('World', { h1: true, bold: true })
+    .insert('Hello world!', { bold: true })
     .insert('\n', { centered: true })
-    .insert('Welcome to my ')
-    .insert('demo', { link: 'https://something.com' })
+    .insert('This is my demo')
+    .ops
 
-  expect(challenges.basics()).toEqual(expected);
+  expect(challenges.problem1()).toEqual(expected);
 })

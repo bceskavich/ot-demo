@@ -1,0 +1,20 @@
+{
+  "name": "ot-demo",
+  "version": "1.0.0",
+  "description": "code challenges for learning about rich-text, json0, and operational transformations",
+  "main": "index.js",
+  "author": "Billy Ceskavich <bceskavich@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^6.7.0",
+    "choo-devtools": "^2.3.3",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --watch"
+  }
+}
